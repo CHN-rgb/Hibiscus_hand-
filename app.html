@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Application</title>
+</head>
+<body>
+    <nav>
+        <a href="intro.html">Back to Intro</a>
+    </nav>
+    <h1>Welcome to the Flower Interaction App</h1>
+    <div id="flower-interactions">
+        <!-- Flower interaction functionalities go here -->
+        <p>Interact with the flowers below:</p>
+        <!-- Example interaction buttons -->
+        <button onclick="interactWithFlower('rose')">Interact with Rose</button>
+        <button onclick="interactWithFlower('tulip')">Interact with Tulip</button>
+        <button onclick="interactWithFlower('daisy')">Interact with Daisy</button>
+    </div>
+    <script>
+        function interactWithFlower(flower) {
+            alert('You interacted with the ' + flower + '!');
+        }
+    </script>
+</body>
+</html>
