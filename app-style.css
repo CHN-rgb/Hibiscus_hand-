@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+  padding: 10px;
+}
+
+.nav .back-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+/* Original flower animation styles preserved */
+.flower {
+  animation: bloom 2s ease-in-out infinite;
+}
+
+@keyframes bloom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
